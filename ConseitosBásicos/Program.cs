@@ -20,16 +20,36 @@ if (40 <= imc)
     Console.WriteLine("Você tem obesidade grau III");
 
 Console.WriteLine("Digite um número:\n");
-    double a = double.Parse(Console.ReadLine());
+    double num1 = double.Parse (Console.ReadLine());
 Console.WriteLine("Digite o outro número:\n");
-    double b = double.Parse(Console.ReadLine());
+    double num2 = double.Parse (Console.ReadLine());
+
 Console.WriteLine("Digite a opação que vc deseja fazer:" +
     "\nSoma: +" +
     "\nSubtração: -" +
     "\nDivisão: /" +
     "\nMultiplicação: *");
-    double c = double.Parse(Console.ReadLine());
-double d;
-if (c == +)
-    d = a + b;
+    string c = Console.ReadLine();
+
+double soma;
+double sub;
+if (c == "+") {
+    soma = num1 + num2;
+    Console.WriteLine($"O resultado é: {d}");
+}
+if (c == "-")
+    double sub = num1 - num2;
 Console.WriteLine($"O resultado é: {d}");
+
+if (c == "/")
+    double div = num1 / num2;
+Console.WriteLine($"O resultado é: {d}");
+
+if (c == "*")
+    double mult = num1 * num2;
+Console.WriteLine($"O resultado é: {d}");
+
+else
+    Console.WriteLine("Operação inválida");
+
+
